@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<style>
+    .search:focus{
+outline: none;
+    }
+</style>
+
+</head>
+<body>
+    <nav class="bg-green-100 p-3 flex items-center  transition-all duration-1000 justify-between shadow-xl sticky top-0 z-10">
+        <h1 class="text-3xl">Greenden</h1>
+        <svg id="navicon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class=" w-4 sm:hidden ">
+            <path fill-rule="evenodd" d="M2 3.75A.75.75 0 0 1 2.75 3h10.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 3.75ZM2 8a.75.75 0 0 1 .75-.75h10.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 8Zm0 4.25a.75.75 0 0 1 .75-.75h10.5a.75.75 0 0 1 0 1.5H2.75a.75.75 0 0 1-.75-.75Z" clip-rule="evenodd" />
+        </svg>
+        
+        
+          
+        <ul class="hidden gap-3   sm:flex ">
+        <li class=" hover:underline hover:text-white  "><a href="greenheadindex.html">Home</a></li>
+        <li class=" hover:underline hover:text-white  "><a href="product.html">Product</a></li>
+        <li  class=" hover:underline hover:text-white  "><a href="">Catalogue</a></li>
+        </ul>
+        
+          
+        </nav>
+    <!--side nav-->
+<section id="sidenav" class="bg-green-100 fixed z-20 right-0 top-0" style="width:50%; height:100vh ; right:-50%;">
+   
+    <div id="cancelside" class="text-right p-5"  >
+ <p class="inline cursor-pointer">X</p>
+ 
+    </div>
+    
+     <ul class="flex flex-col items-center gap-10 " >
+         <li class=" hover:underline hover:text-white  "><a href="greenheadindex.html">Home</a></li>
+         <li class=" hover:underline hover:text-white  "><a href="product.html">Product</a></li>
+         <li  class=" hover:underline hover:text-white  "><a href="">Catalogue</a></li>
+         </ul>
+ 
+ </section>
+
+<!--body>-->
+    <div class="bg-white-100 text-center">
+        <h2 class="font-bold text-2xl p-6"> Product</h2>
+
+<div class="border border-solid   p-2 w-45 rounded-2xl flex items-center">
+    <i class="fa-solid fa-magnifying-glass left-0"></i>
+    <input  class="search" id="searchtext" style="border:none; width: 100% ;" placeholder="Search for Our Premium Product...." />
+</div>
+
+     <div  id="productcontainer"  class=" bg-green-100 grid grid-cols-2 mt-6 md:grid-cols-4 ">
+        <div class="p-4">
+            <img class="inline hover:shadow-2xl  transform hover:-translate-y-2" src="./images/flower-d1.png"  alt="f1">
+            <h1>Black creeper</h1>
+            <P>$50</P>
+    
+        </div>
+        <div class="p-2">
+            <img class="inline  hover:shadow-2xl  transform hover:-translate-y-2" src="./images/flower-d2.png"  alt="f1">
+            <h1>Yellow Pot</h1>
+            <P>$70</P>
+    
+        </div>
+        <div class="p-2"> 
+            <img class="inline  hover:shadow-2xl  transform hover:-translate-y-2" src="./images/flower-d3.png"  alt="f1">
+            <h1>snake plant</h1>
+            <P>$80</P>
+    
+        </div>
+        <div class="p-2">
+            <img  class="inline  hover:shadow-2xl  transform hover:-translate-y-2" src="./images/flower-d4.png"  alt="f1">
+            <h1> small pot</h1>
+            <P>$90</P>
+    
+        </div>
+        <div class="p-2">
+            <img class="inline hover:shadow-2xl  transform hover:-translate-y-2" src="./images/flower-d1.png"  alt="f1">
+            <h1>Black creeper</h1>
+            <P>$50</P>
+    
+        </div>
+        <div class="p-2">
+            <img class="inline  hover:shadow-2xl  transform hover:-translate-y-2" src="./images/flower-d2.png"  alt="f1">
+            <h1>Yellow Pot</h1>
+            <P>$70</P>
+    
+        </div>
+        <div class="p-2"> 
+            <img class="inline  hover:shadow-2xl  transform hover:-translate-y-2" src="./images/flower-d3.png"  alt="f1">
+            <h1>snake plant</h1>
+            <P>$80</P>
+    
+        </div>
+        <div class="p-2">
+            <img  class="inline  hover:shadow-2xl  transform hover:-translate-y-2" src="./images/flower-d4.png"  alt="f1">
+            <h1> small pot</h1>
+            <P>$90</P>
+    
+        </div>
+       </div>
+    </div>
+
+    <script src="product.js"> </script>
+    
+</body>
+</html>
